@@ -72,7 +72,7 @@ git commit -m "your message"
 git push
 ```
 
-You can now raise a [Pull Request](https://github.com/KiraCore/kips/compare/PULL_REQUEST?template=PULL_REQUEST_TEMPLATE.md) and fill in the required form to submit your KIP.
+You can now raise a [Pull Request](https://github.com/KiraCore/kips/compare?expand=1&template=PULL_REQUEST_TEMPLATE.md) and fill in the required form to submit your KIP.
 
 ## Contributors
 
