@@ -7,8 +7,8 @@ KIPs stand for KIRA Improvements Proposals.
   - [KIP Group 2 - Governance](#kip-group-2---governance)
 - [KIP List](#kip-list)
 - [How to Submit a KIP?](#how-to-submit-a-kip-)
-  - [Create your KIP markdown file](#create-your-kip-markdown-file-following-these-requirements)
-  - [Submit your KIP by raising a PR to master](#submit-your-kip-by-raising-a-pr-to-master)
+  - [Create your KIP](#create-your-kip-markdown-file-following-these-requirements)
+  - [Submit your KIP](#submit-your-kip-by-raising-a-pr-to-master)
 - [Contributors](#contributors)
 
 ## KIRA's Core KIPS
@@ -31,8 +31,8 @@ Coming Soon...
 
 ## KIP List
 
-| # | Layer | Title of the KIP | Tags |
-|---|-------|------------------|------|
+| # | Layer | Title | Key Words |
+|---|-------|-------|-----------|
 | [71](kips/71.md) | [SEKAI](https://github.com/KiraCore/sekai) | Spending Pools | `staking` `rewards` `distribution` `UBI` |
 | [72](kips/72.md) | [SEKAI](https://github.com/KiraCore/sekai) | Universal Basic Income | `UBI` `incentive` |
 | [73](kips/73.md) | [SEKAI](https://github.com/KiraCore/sekai) | Fee Reward Distributor v1 | `fees` `rewards` `consensus` |
