@@ -2,11 +2,20 @@
 
 KIPs stand for KIRA Improvements Proposals.
 
-# KIRA's Core KIPS
+- [KIRA's Core KIPS](#kiras-core-kips)
+  - [KIP Group 1 - Validator Staking](#kip-group-1---validator-staking)
+  - [KIP Group 2 - Governance](#kip-group-2---governance)
+- [KIP List](#kip-list)
+- [How to Submit a KIP?](#how-to-submit-a-kip-)
+  - [Create your KIP markdown file](#create-your-kip-markdown-file-following-these-requirements)
+  - [Submit your KIP by raising a PR to master](#submit-your-kip-by-raising-a-pr-to-master)
+- [Contributors](#contributors)
+
+## KIRA's Core KIPS
 
 The following KIPS are foundational proposals that have been authored and implemented by KIRA's core team. These proposals are foundational to the network's current structure and functionality. These KIPS have been grouped together to provide a comprehensive overview of the mechanisms and innovations that form the backbone of KIRA.
 
-## KIP Group 1 - Validator Staking
+### KIP Group 1 - Validator Staking
 
 KIPs 71-75 propose the creation of economic incentives for KIRA consensus nodes. As these consensus nodes are required to stake assets with economic value as slashable collateral, it is also necessary to reward them for performing their duties. KIP 71 proposes the spending pool structure used by KIPs 72 and 73 to distribute rewards to consensus nodes. KIPs 74 and 75 outline the incentive structures that govern staking rewards and slashing punishments for consensus nodes. 
 
@@ -16,29 +25,29 @@ KIPs 71-75 propose the creation of economic incentives for KIRA consensus nodes.
 - [KIP 74 - Staking Module Part 1](kips/74.md): KIP 74 discusses the implementation of asset staking to consensus nodes on KIRA. This includes delegated staking.
 - [KIP 75 - Staking Module Part 2](kips/75.md): KIP 75 discusses the implementation of slashing rules for misbehaving validators and the governance process by which this slashing will be conducted.
 
-## KIP Group 2 - Governance
+### KIP Group 2 - Governance
 
 Coming Soon...
 
-# KIP List
+## KIP List
 
 | # | Layer | Title of the KIP | Tags |
 |---|-------|------------------|------|
 | [71](kips/71.md) | [SEKAI](https://github.com/KiraCore/sekai) | Spending Pools | `staking` `rewards` `distribution` `UBI` |
-| [72](kips/72.md) | [SEKAI](https://github.com/KiraCore/sekai) | Universal Basic Income | `UBI` `incentive` `non-sybil` `participation` |
-| [73](kips/73.md) | [SEKAI](https://github.com/KiraCore/sekai) | Fee Reward Distributor v1 | `fees` `rewards` `consensus` `nodes` |
+| [72](kips/72.md) | [SEKAI](https://github.com/KiraCore/sekai) | Universal Basic Income | `UBI` `incentive` |
+| [73](kips/73.md) | [SEKAI](https://github.com/KiraCore/sekai) | Fee Reward Distributor v1 | `fees` `rewards` `consensus` |
 | [74](kips/74.md) | [SEKAI](https://github.com/KiraCore/sekai) | Staking Module Part 1 | `staking` `delegation` `consensus` `security` |
-| [75](kips/75.md) | [SEKAI](https://github.com/KiraCore/sekai) | Staking Module Part 2 | `validators` `slashing` `governance` `rules` |
+| [75](kips/75.md) | [SEKAI](https://github.com/KiraCore/sekai) | Staking Module Part 2 | `validators` `slashing` `governance` |
 
-# How to Submit a KIP ? 
+## How to Submit a KIP ? 
 
-## Create your KIP markdown file following these requirements:
+### Create your KIP markdown file following these requirements:
 
 - An **Abstract** paragraph, summarizing the proposal. This paragraph must provide a clear understanding of what the KIP is about.
 - A **Motivation** paragraph detailing the motivation behind this KIP. Explain why this KIP is necessary or beneficial for the community or project.
 - A **Concept and Implementation** description paragraph. The main content section of your file. Provide a comprehensive description of the changes or enhancements you are proposing. Include any relevant details, data, examples, or analyses that support your proposal. This section should be detailed to provide a clear and complete understanding of your KIP to the reviewers and community members.
 
-## Submit your KIP by raising a PR to master:
+### Submit your KIP by raising a PR to master:
 
 1. Clone the repository:
 ```bash
@@ -65,7 +74,7 @@ git push
 
 You can now raise a [Pull Request](https://github.com/KiraCore/kips/compare/PULL_REQUEST?template=PULL_REQUEST_TEMPLATE.md) and fill in the required form to submit your KIP.
 
-# Contributors
+## Contributors
 
 <a align="center" href="https://github.com/KiraCore/kips/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=KiraCore/kips" />
