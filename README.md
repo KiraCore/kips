@@ -1,6 +1,6 @@
 # KIPs
 
-KIPs stand for KIRA Improvements Proposals.
+KIPs stand for KIRA Improvement Proposals.
 
 - [KIRA's Core KIPS](#kiras-core-kips)
   - [KIP Group 1 - Validator Staking](#kip-group-1---validator-staking)
@@ -13,7 +13,7 @@ KIPs stand for KIRA Improvements Proposals.
 
 ## KIRA's Core KIPS
 
-The following KIPS are foundational proposals that have been authored and implemented by KIRA's core team. These proposals are foundational to the network's current structure and functionality. These KIPS have been grouped together to provide a comprehensive overview of the mechanisms and innovations that form the backbone of KIRA.
+The following KIPS are foundational proposals authored and implemented by KIRA's core team. These proposals form the backbone of the network's current structure and functionality.
 
 ### KIP Group 1 - Validator Staking
 
