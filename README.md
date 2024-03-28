@@ -1,5 +1,8 @@
 # KIPs
 
+> [!IMPORTANT]  
+> KIPs may not always be implemented exactly as presented.
+
 KIPs stand for KIRA Improvement Proposals.
 
 - [KIRA's Core KIPS](#kiras-core-kips)
@@ -30,9 +33,6 @@ KIPs 71-75 propose the creation of economic incentives for KIRA consensus nodes.
 Coming Soon...
 
 ## KIP List
-
-> [!IMPORTANT]  
-> KIPs may not always be implemented exactly as presented.
 
 | # | Layer | Title | Key Words |
 |---|-------|-------|-----------|
