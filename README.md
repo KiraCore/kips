@@ -31,6 +31,9 @@ Coming Soon...
 
 ## KIP List
 
+> [!IMPORTANT]  
+> KIPs may not always be implemented exactly as presented.
+
 | # | Layer | Title | Key Words |
 |---|-------|-------|-----------|
 | [71](kips/71.md) | [SEKAI](https://github.com/KiraCore/sekai) | Spending Pools | `staking` `rewards` `distribution` `UBI` |
