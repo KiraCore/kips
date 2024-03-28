@@ -1,9 +1,9 @@
 # KIPs
 
+KIPs stand for KIRA Improvement Proposals.
+
 > [!IMPORTANT]  
 > KIPs may not always be implemented exactly as presented.
-
-KIPs stand for KIRA Improvement Proposals.
 
 - [KIRA's Core KIPS](#kiras-core-kips)
   - [KIP Group 1 - Validator Staking](#kip-group-1---validator-staking)
