@@ -1,0 +1,64 @@
+---
+name: Process KIP Submissions
+
+permissions:
+  contents: write
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [opened, closed] # Trigger when PR is opened and closed
+
+jobs:
+  check-deletions-and-integrity:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'submission/') && github.event.pull_request.merged == false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11     # v4.4.1
+        with:
+          fetch-depth: 2 # Necessary to ensure history for diffs
+
+      - name: Check for unauthorized modifications or deletions in 'kips' folder
+        run: |
+          git fetch origin master # Fetch the base branch to compare against
+          # Detect modifications or deletions to existing files
+          MODIFIED_OR_DELETED_FILES=$(git diff --name-only --diff-filter=DM origin/master...HEAD -- kips/)
+          if [ ! -z "$MODIFIED_OR_DELETED_FILES" ]; then
+            echo "Modification or deletion of existing files in the 'kips' folder is not allowed."
+            echo "Unauthorized changes detected in the following files:"
+            echo "$MODIFIED_OR_DELETED_FILES"
+            exit 1
+          fi
+
+      - name: Check workflows directory integrity
+        run: |
+          CURRENT_HASH=$(find .github/workflows -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | awk '{print $1}')
+          echo "Computed hash: $CURRENT_HASH"
+          #TODO: Uncomment rows below
+          #if [ "$CURRENT_HASH" != ${{ secrets.WORKFLOWS_HASH }} ]; then
+          #  echo "The .github/ directory has been tampered with!"
+          #  exit 1
+          #fi
+
+  update-readme:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'submission/') && github.event.pull_request.merged == true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11       #v4.4.1
+        with:
+          fetch-depth: 0 # Fetch all history for all branches and tags
+      - name: Update README
+        run: |
+          echo 'Updating README with new KIP entries...'
+          python .github/workflows/update_master.py
+
+      - name: Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README with new KIP entries"
+          git push --force

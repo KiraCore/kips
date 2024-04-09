@@ -30,7 +30,11 @@ KIPs 71-75 propose the creation of economic incentives for KIRA consensus nodes.
 
 ### KIP Group 2 - Governance
 
-Coming Soon...
+KIPs 80 and 81 propose the format for governance proposals to be recorded and polled amongst a permissioned subset of users. 
+
+- [KIP 80 - Governance Polls](kips/80.md): KIP 80 proposes the format for polls to adhere to so that permissioned users can participate. They can vote for a listed option, propose their own custom option, abstain, or veto proposals. The proposal, voting process, and outcome will all be transparent and recorded onchain.
+- [KIP 81 - Councilors](kips/81.md): KIP 81 proposes the Councilor status, allowing any KIRA account with at least one whitelisted permission or role to participate in the onchain governance polls proposed in KIP 80.
+
 
 ## KIP List
 
@@ -41,6 +45,8 @@ Coming Soon...
 | [73](kips/73.md) | [SEKAI](https://github.com/KiraCore/sekai) | Fee Reward Distributor v1 | `fees` `rewards` `consensus` |
 | [74](kips/74.md) | [SEKAI](https://github.com/KiraCore/sekai) | Staking Module Part 1 | `staking` `delegation` `consensus` `security` |
 | [75](kips/75.md) | [SEKAI](https://github.com/KiraCore/sekai) | Staking Module Part 2 | `validators` `slashing` `governance` |
+| [80](kips/80.md) | [SEKAI](https://github.com/KiraCore/sekai) | Governance Poll Voting | `governance` `polls` `signaling proposal` |
+| [81](kips/81.md) | [SEKAI](https://github.com/KiraCore/sekai) | Councilors | `governance` `roles` `permissions` `ranking` |
 
 ## How to Submit a KIP ? 
 
